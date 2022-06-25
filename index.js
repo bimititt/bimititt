@@ -31,7 +31,7 @@ const GoStumble = (code, auth) => new Promise((resolve, reject) => {
      ██    ██    ██    ██ ██  ██  ██ ██   ██ ██      ██            
 ███████    ██     ██████  ██      ██ ██████  ███████ ███████    
 
-By : ${chalk.red('@dkmpostor')} - ${chalk.blue('https://dkmpostor.netlify.app/')}
+By : ${chalk.green('@Bimititt')} - ${chalk.yellow('Play This Script At 11.00 - 16.00')}
 
 Features :
 
@@ -55,7 +55,7 @@ Features :
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.blue(`[ ${moment().format('HH:mm:ss')} ] Expired Cookie !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -68,12 +68,12 @@ Features :
                 const trophy = data.User.SkillRating;
                 const crown = data.User.Crowns;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.blue(`Pass Star : ${tokenPass}`)} | ${chalk.blue(`Trophy : ${trophy}`)} | ${chalk.blue(`Crown : ${crown}`)}`));
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nick : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} | ${chalk.blue(`Pass Star : ${tokenPass}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
                 await delay(time)
 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Your Account Has Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -95,7 +95,7 @@ Features :
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Expired Cookie !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -107,12 +107,12 @@ Features :
                 const tokenPass = data.User.BattlePass.PassTokens;
                 const trophy = data.User.SkillRating;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.yellow(`Trophy : ${trophy}`)}`));
                 await delay(time)
                 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Your Account Has Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -146,12 +146,12 @@ Features :
                 const tokenPass = data.User.BattlePass.PassTokens;
                 const trophy = data.User.SkillRating;
                 
-                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.blue(`Trophy : ${trophy}`)}`));
+                console.log(chalk.green(`[ ${moment().format('HH:mm:ss')} ] Nickname : ${username} | Country : ${country} | ${chalk.blue(`EXP : ${exp}`)} |  ${chalk.blue(`Pass Star : ${tokenPass}`)}  | ${chalk.yellow(`Trophy : ${trophy}`)}`));
                 await delay(time)
                 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Your Account Has Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -173,7 +173,7 @@ Features :
             const result = await GoStumble(code, auth);
             if (!result) {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Wrong cookie or Expired cookie !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Expired cookie !`));
                 break;
 
             } else if (result.includes('User')) {
@@ -189,7 +189,7 @@ Features :
                 
             } else if (result == 'BANNED') {
 
-                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Banned !`));
+                console.log(chalk.red(`[ ${moment().format('HH:mm:ss')} ] Your Account Has Banned !`));
                 break;
                 
             } else if (result == 'SERVER_ERROR') {
@@ -201,7 +201,7 @@ Features :
 
     } else {
 
-        console.log(chalk.red(`\n[ ${moment().format('HH:mm:ss')} ] Wrong feature !`));
+        console.log(chalk.red(`\n[ ${moment().format('HH:mm:ss')} ] Wrong feature select !`));
 
     }
     
